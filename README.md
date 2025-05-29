@@ -1,2 +1,3 @@
-#Crypto Macroeconomy Prediction Correlation Analysis, CSUREMM
+# Crypto Macroeconomy Prediction Correlation Analysis, CSUREMM
+
 Aim: Our research project aims to investigate whether volatility in cryptocurrencies (Bitcoin and Tether) can forecast or is correlated with macroeconomic indicators, particularly the U.S. labor force participation rate. Using the U.S. dollar as a benchmark, we will compare the effects of different types of cryptocurrencies, including traditional crypto and stablecoin, on U.S. labor force participation rate. Through our result, we hope to provide a quantitative foundation for policy recommendations on the future regulation of cryptocurrencies, grounded in their observed relationship with the labor force participation rate. 
