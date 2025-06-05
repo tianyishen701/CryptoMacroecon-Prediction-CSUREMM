@@ -1,7 +1,9 @@
+##original extraction file, no longer used
+
 import pandas as pd
 
 # Load your data (adjust path to your actual file)
-df = pd.read_excel('/Users/tianyishen/Downloads/SampleRealVolCalculationForExtracting.xlsx')
+df = pd.read_excel('/Users/tianyishen/Downloads/SampleRealVolCalculation (1).xlsx')
 
 # Ensure 'Date' is datetime
 df['Date'] = pd.to_datetime(df['Date'])
@@ -19,8 +21,8 @@ df['YearMonth'] = df['Date'].dt.to_period('M')
 first_days = df.groupby('YearMonth').first().reset_index()
 
 # Extract relevant columns
-result = first_days[['Date', 'Log VOL USD']]
+result = first_days[['Date', 'Log VOL']]
 
 # save & view result
 print(result)
-result.to_excel('/Users/tianyishen/Desktop/USD_FirstOfMonth.xlsx', index=False)
+result.to_excel('/Users/tianyishen/Desktop/Bitcoin_FirstOfMonth.xlsx', index=False)
