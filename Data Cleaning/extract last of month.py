@@ -88,16 +88,14 @@ if __name__ == "__main__":
 ###############################################################################
 
     # Load excel
-    df=pd.read_excel('/Users/tianyishen/Desktop/BTC, Tether Log Volatility For Extraction.xlsx')
-
-    print(df.head)
+    df=pd.read_excel('data/BTC, Tether Log Volatility For Extraction.xlsx')
 
     # Compute monthly log volatility
     result = compute_monthly_log_volatility(df)
 
     # Save or print
     print(result.head())
-    result.to_excel('/Users/tianyishen/Desktop/USD_Coin_LastOfMonth.xlsx', index=False)
+    result.to_excel('data/Tether_LastOfMonth.xlsx', index=False)
 
 # ###############################################################################
 # #For VIX & MOVE
@@ -108,5 +106,5 @@ if __name__ == "__main__":
 #     vix_eom = get_end_of_month_values(vix_df, date_col='DATE', price_col='CLOSE')
 #     # move_eom = get_end_of_month_values(move_df, date_col='Date', price_col='MOVE')
 
-#     print(vix_eom.head())
-#     vix_eom.to_excel('data/VIX_LastOfMonth.xlsx', index=False)
+    print(vix_eom.head())
+    vix_eom.to_excel('data/VIX_LastOfMonth.xlsx', index=False)
